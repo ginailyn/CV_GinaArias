@@ -1,0 +1,339 @@
+
+:root{ --secundary-color: #F7C331;
+}
+
+html{
+   scroll-behavior: smooth;
+}
+
+body{
+        font-family: sans-serif;
+       /* padding: 2px 2px 0*/
+     
+   }
+
+h1 { color:#005677; 
+     letter-spacing: 12px;
+      padding: 4px 4px 0;
+
+   }
+  
+h2 { text-align: center;
+        padding-left: 50px 10px;
+        color: antiquewhite;
+   }
+
+ h1{
+     font-size:30px;
+     margin-top: 15px;
+   }    
+ 
+ .tituloCV{
+     margin: 0 130px;
+     letter-spacing: normal;
+     
+   }
+
+
+
+.centrado { text-align:center;
+            margin: auto;}
+.color_franja { background-color: #C4C4C4;}
+.color_letras { color: white;text-decoration: none;}
+.color_franja_azul { background-color: #005677;
+   width: 300px;
+   color: white;
+   margin: 30px 40%;}
+.color_franja_azul_1f { background-color: #005677;}
+
+.tabulacion  { margin-left: 60px;}      
+.tabulacion2  { margin-left: 146px;} 
+
+
+header{
+  /*background-color: black;*/
+  background:url('../img/banner-fondo.jpg');
+  
+  height: 300px;
+  background-color: black;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-size: contain;
+  margin: 0;
+  border: solid 50px black;
+}
+
+.header2{
+   /*background-color: black;*/
+   background:url('../img/FONDO3.png');
+   
+   height:90px;
+   background-color: white;
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   background-position-x: left;
+   background-size: contain;
+   margin: 0;
+   border:none;
+  }
+ 
+.justify{
+   text-align: justify;
+   margin: 20px 510px 300px;
+}
+
+
+.foto{
+   height: 400px;
+   width: auto;
+   background-attachment: fixed;
+   background-size: contain;
+   margin: 120px 120px 40px; 
+   border: solid 12px #034574;
+}
+
+
+.fotoCV{
+     height: 300px;
+     width: auto;
+     margin-left: 0px;
+     background-attachment: fixed;
+     background-size: contain;
+}
+
+.nav{
+     padding: 65px 180px 0;
+     margin-top: 10px;
+    
+ }  
+
+ /*-- Botón de Hamburgues--*/
+ .nav-toggle{
+     color: black;
+     background: none;
+     border: none;
+     font-size:30px;
+     padding: 0 100px;
+     line-height: 60px;
+     display:none;
+}
+ 
+.nav-menu{
+     display: flex;    
+     justify-content: space-around;
+     margin-right: 20px;
+     list-style: none;
+     margin-top: -60px;
+     
+}
+.nav-menu-item{
+     font-size: 18px;
+     margin: 0 10px;
+     text-transform: uppercase;
+}     
+
+.nav-menu-link{
+     color: blue;
+     text-decoration: none;
+     padding: 8px 12px;
+     border-radius: 3px;
+}
+
+.nav-menu-link:hover{
+     background-color: #034574;
+     color: beige; 
+     transition: 0.5;
+}
+
+#formacion_academica {
+   display: flex;
+   flex-direction: column;
+}
+
+.formacion{
+   padding: 23px;
+   
+}
+.cuerpo-formacion-academica{ 
+   background-color: rgb(31,37,114);
+   color: white;
+   border: solid 30px rgb(31,37,114);
+}
+
+.division_tope{
+   width: 100%;
+   /*position:relative;
+   top: 2px;*/
+}
+.division_cierre{
+   transform: scaleY(-1);
+   top:-2px;
+   width: 1334px;
+}
+
+
+/* dispositivos móviles*/
+.experience-date{
+   color: var(--secundary-color);
+   font-size:25px;
+   font-weight: bold;
+   
+}
+
+.experience-company{
+   font-size:20px;
+   text-transform: uppercase;
+   margin-top: 5px;
+     
+}
+
+.experience-position{
+   font-weight: 500;
+   font-size: 18px;
+   margin-top: 20px;
+}
+
+/*.grid_formacion_academica{
+   display: grid;
+   grid-template-columns: auto 2px auto;
+}*/
+
+@media (min-width:950px){
+  .grid_formacion_academica{
+   background-color:rgb(31.37,114) ;
+   display: grid;
+   grid-template-columns: 48% 2px 48% ;
+   }
+
+   .line{
+      background-color: white;
+      position: relative;
+   }
+   .line::before, .line::after {
+     content: "";
+     display: block;
+     width: 20px;
+     height: 20px;
+     background-color: white;
+     border-radius: 50%;
+
+     position:absolute;
+     top: -20px;
+     left: -9px;
+   }
+   .line::after {
+      top:100%;
+      z-index:1;
+   }
+
+   .izq{
+      margin-left: 280px;
+
+   }
+
+} 
+
+
+
+/*Cuando nuestro dispositivo sea un celular tenga 768px*/
+@media (max-width:768px){
+
+   .fotoCV {
+      width: 20%;
+      height: 20%;
+      max-width: auto;
+  }
+
+  h1{
+     font-size: 20px;
+  }
+  .nav-menu{
+     /*margin-right: 20px;
+     /*para que salga sin los puntos de las listas */
+     list-style: none;
+     margin-top: 20px;
+     
+  }
+  .nav-menu-item{
+     font-size: 13px;
+     margin: 8px 0;
+  } 
+  body{
+     padding-top: 70px;
+  }    
+
+}
+@media (max-width:549px){
+     
+   nav{
+     padding: 10px;
+     display: flex;
+   }  
+   .nav-menu{
+     flex-direction: column;
+     /*list-style: none;*/
+     align-items: center;
+     
+   }
+
+
+}
+
+@media (max-width:247x){
+     
+     h1{
+       font-size: 18px;
+     }  
+     
+  }
+  
+  
+  .izq2{ 
+   margin-left: 280px;
+   font-size: 20px;
+   list-style: none;
+ }
+ h4{
+   margin: 30px 50px ;
+   font-style: normal;
+   font-weight: lighter;
+   line-height:25px;
+ }
+
+ .enCaja{
+   width: 540px;
+   color: #034574;
+   margin: 20px 45%;
+   text-align: justify;
+   padding: 20px;
+   font-size: italic;
+   background-color:white ;
+   border-radius: 5px;
+ } 
+ .sobreMi{
+ background-color: steelblue;
+ }
+ .textoAcercaMi{
+   color:rgb(31.37,114) ;
+   margin-left: 380px;
+    
+ }
+
+ .regresar{
+   width: 50;
+   height: 30;
+
+ }
+ 
+
+ .enCaja2{
+   width: 280px;
+   color: white;
+   margin: 20px 45%;
+   text-align: justify;
+   padding: 20px;
+   font-size: italic;
+   background-color:#034574 ;
+   border-radius: 5px;
+ } 
